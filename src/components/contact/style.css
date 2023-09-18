@@ -1,0 +1,64 @@
+/* 
+=====================================
+    CONTACT SECTION START
+=====================================
+*/
+.contact {
+    margin: 5rem 2rem;
+}
+
+.contact h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+.contact .contact-form input {
+    font-size: 1.7rem;
+    color: #fff;
+    height: 7rem;
+    background-color: transparent;
+    border: 1px solid #c0b1ad;
+    outline: none;
+    box-shadow: none;
+    padding: 1.5rem;
+    border-radius: 0px;
+    margin: 1.5rem 0;
+
+}
+
+.contact .contact-form input::placeholder {
+    color: #fff;
+}
+.contact .contact-form .contact-btn{
+    margin-top: 4rem;
+}
+.contact .contact-form .contact-btn button {
+    border-radius: 40px;
+    width: 250px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .05rem;
+}
+
+@media (max-width: 991px){
+    
+.contact .contact-form .contact-btn button {
+    width: 180px;
+    height: 45px;
+}
+}
+
+/* 
+=====================================
+    CONTACT SECTION END
+=====================================
+*/

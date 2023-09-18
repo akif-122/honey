@@ -1,0 +1,159 @@
+header{
+    padding: 1.8rem;
+}
+header .logo img{
+    width: 80px;
+}
+
+header .logo img{
+    width: 80px;
+}
+header .nav-toggler{
+    all: unset;
+    color: #fff;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+header .navbar ul li{
+    margin: 0 1rem;
+}
+header .navbar ul li a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 5px;
+    font-weight: 400;
+    transition: .4s ease-out;
+    text-transform: uppercase;
+}
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color: #d96226 !important;
+}
+header .nav-right {
+    margin-left: 5rem;
+}
+header .nav-right > a{
+    font-size: 3rem;
+    color: #fff;
+    margin-right: 2rem;
+    transition: .4s ease-out;
+
+}
+
+header{
+    position: relative;
+}
+header .nav-right .search-wrap .search-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    color: #fff;
+    transition: .4s ease-out;
+}
+header .nav-right .search-wrap .search-btn:hover,
+header .nav-right > a:hover{
+    color: #d96226;
+    cursor: pointer;
+}
+header .nav-right .search-wrap .search-container{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 500px;  
+    pointer-events: none;
+    opacity: 0;
+    transition: .4s ease-out;
+}
+header .nav-right .search-wrap .search-container.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+header .nav-right .search-wrap .search-container input{
+    height: 5rem;
+    font-size: 1.7rem;
+    padding-left: 2rem;
+    color: #d96226;
+    border-color: #d96226;
+    box-shadow: none;
+    font-weight: 500;
+}
+header .nav-right .search-wrap .search-container button{
+    padding: 0 2rem;
+    font-size: 3rem;
+    height: 5rem;
+    width: 100px;
+}
+header .nav-right .search-wrap .search-container button svg{
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 991px){
+   
+    header #navs{
+        position: fixed;
+        background-color: #fff;
+        width: 300px;
+        top: 0;
+        left: -300px;
+        height: 100vh;
+        padding-top: 100px;
+        opacity: 0;
+        transition: .4s ease-out;
+        z-index: 1000;
+    }
+    header #navs.active{
+        left: 0;
+        opacity: 1;
+    }
+    header #navs .nav-toggler{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        color: #333;
+    }
+    header .navbar #navs ul li a{
+        color: #333;
+        border-radius: .8rem;
+        padding: 1rem 1.5rem;
+        display: block;
+    }
+
+    header .navbar #navs ul li a.active,
+    header .navbar #navs ul li a:hover{
+        color: #fff !important;
+        background-color: #d96226;
+        
+    }
+}
+
+@media (max-width: 575px){
+    header .nav-right .search-wrap .search-container{
+        position: absolute;
+        top: 100%;
+        /* left: 0; */
+        right: -100%;
+
+        transform: translateX(-30px);
+        width: 90vw;  
+        pointer-events: none;
+        opacity: 0;
+        transition: .4s ease-out;
+    }
+}
+
+@media (max-width: 425px){
+    header #navs{
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        padding-top: 100px;
+        opacity: 0;
+        transition: .4s ease-out;
+        z-index: 1000;
+    }
+}

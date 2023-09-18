@@ -1,0 +1,64 @@
+/* 
+==========================================
+    QUALITY SECTION START
+==========================================
+*/
+.quality{
+    padding: 7rem 2rem;
+}
+.quality .quality-heading h2{
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.quality .quality-heading p{
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    max-width: 850px;
+    margin: auto;
+}
+.quality .quality-cards{
+    margin-top: 5rem;
+}
+.quality .quality-card{
+    margin: 2rem 0;
+}
+.quality .quality-card .quality-img{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.quality .quality-card .quality-img img{
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+@media (max-width: 1399px){
+    .quality .quality-card .quality-img{
+        width: 270px;
+        height: 270px;
+     
+}
+}
+
+@media (max-width: 1199px){
+    .quality .quality-card .quality-img{
+        width: 220px;
+        height: 220px;
+     
+}
+}
+/* 
+==========================================
+    QUALITY SECTION END
+==========================================
+*/

@@ -1,0 +1,39 @@
+.c-btn {
+    border-radius: 40px;
+    width: 250px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .05rem;
+}
+
+.c-btn.b-sm {
+    border-radius: 40px;
+    width: 170px;
+    height: 47px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .c-btn {
+        border-radius: 40px;
+        width: 180px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: .05rem;
+    }
+}
